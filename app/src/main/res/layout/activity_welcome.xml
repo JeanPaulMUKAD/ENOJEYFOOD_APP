@@ -20,27 +20,46 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="@string/Enjoyfood"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="33sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".4"
-        android:textAlignment="center"/>
+        app:layout_constraintVertical_bias="0.397" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
+        android:textAlignment="center"
         android:textColor="#FBFBFB"
-        android:textStyle="bold"
         android:textSize="33sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textAlignment="center"/>
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:padding="14dp"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias=".7"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent=".8" />
+
 
 
 
