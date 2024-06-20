@@ -1,6 +1,7 @@
 package com.example.enjoyfoof;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,4 +18,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     }
 
+    public void Login(View view) {
+
+    }
 }
