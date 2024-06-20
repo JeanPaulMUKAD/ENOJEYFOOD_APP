@@ -1,5 +1,6 @@
 package com.example.enjoyfoof;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -19,6 +20,6 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     public void Login(View view) {
-
+        startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
     }
 }

@@ -107,7 +107,8 @@
         android:textColor="#FF0000"
         android:textSize="15sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="274dp"
-        tools:layout_editor_absoluteY="613dp" />
+        tools:layout_editor_absoluteX="101dp"
+        android:onClick="register"
+        tools:layout_editor_absoluteY="593dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

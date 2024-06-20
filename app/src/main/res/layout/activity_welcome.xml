@@ -81,6 +81,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
+        android:onClick="Login"
         android:background="@drawable/btn_bg_design"/>
 
 
