@@ -103,7 +103,27 @@
         android:background="@drawable/btn_bg_design"
         app:layout_constraintWidth_percent=".8" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_register"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="613dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="613dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
