@@ -9,6 +9,11 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src=""
+        android:foreground="@drawable/foreground_design"
+        android:src="@drawable/register"
+        android:scaleType="centerCrop"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
