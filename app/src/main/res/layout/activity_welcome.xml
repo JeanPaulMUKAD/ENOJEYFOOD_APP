@@ -14,15 +14,15 @@
         android:foreground="@drawable/foreground_design"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/welcome"
+        android:src="@drawable/bac"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-43dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="@string/Enjoyfood"
+        android:layout_marginStart="3dp"
+        android:text="EnjoyFood"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="33sp"
@@ -31,12 +31,12 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintVertical_bias="0.394" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/welcome"
+        android:text="@string/welcome_on_our_app"
         android:textAlignment="center"
         android:textColor="#FBFBFB"
         android:textSize="33sp"
@@ -53,9 +53,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="164dp"
         android:padding="14dp"
+        android:textColor="#FBFBFB"
         android:text="@string/register"
-        android:textSize="23dp"
-        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="116dp"
-        android:text="@string/signIn"
+        android:text="Sign In"
         android:textAlignment="center"
         android:textColor="#FBFBFB"
         android:textSize="23sp"
