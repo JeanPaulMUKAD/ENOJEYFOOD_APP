@@ -16,4 +16,5 @@
     <string name="welcome_to_you_all">welcome_to_you_all</string>
     <string name="register">Register</string>
     <string name="sign_in">Sign_in</string>
+    <string name="signIn">signIn</string>
 </resources>
