@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:foreground="@drawable/foreground_design"
         android:scaleType="centerCrop"
-        android:src="@drawable/register"
+        android:src="@drawable/bac3"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="47dp"
          android:contentDescription="@string/todo" />
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="360dp"
-        android:drawableStart="@drawable/baseline_ac_unit_24"
+        android:drawableStart="@drawable/baseline_admin_panel_settings_24"
         android:layout_marginEnd="64dp"
         android:backgroundTint="#FFFFFF"
         android:drawablePadding="13dp"
