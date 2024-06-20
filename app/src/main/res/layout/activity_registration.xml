@@ -6,12 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:foreground="@drawable/foreground_design"
+        android:scaleType="centerCrop"
         android:src="@drawable/register"
-        android:scaleType="centerCrop"/>
+        tools:layout_editor_absoluteX="-44dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -41,17 +44,47 @@
     <EditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:drawableLeft=""
         android:hint="@string/full_name"
         android:textColorHint="@color/white"
         app:layout_constraintWidth_percent=".8"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="273dp"
-       android:drawableLeft="@drawable/baseline_account_circle_24"
-        android:drawablePadding="13dp"
+        tools:layout_editor_absoluteY="300dp"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:layout_marginEnd="64dp"
         android:backgroundTint="#FFFFFF"
-        android:layout_marginTop="30dp"/>
+        android:drawablePadding="13dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textColorHint="@color/white"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="339dp"
+        android:drawableStart="@drawable/baseline_ac_unit_24"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawablePadding="13dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Password"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="390dp"
+        android:drawableLeft="@drawable/baseline_admin_panel_settings_24"
+        android:drawablePadding="13dp"
+        app:layout_constraintWidth_percent=".8"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
