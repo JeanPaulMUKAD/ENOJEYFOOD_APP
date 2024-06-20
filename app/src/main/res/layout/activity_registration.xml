@@ -13,7 +13,41 @@
         android:src="@drawable/register"
         android:scaleType="centerCrop"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Enjoyfood"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="343dp"
+        app:layout_constraintVertical_bias=".2"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft=""
+        android:hint="@string/full_name"
+        android:textColorHint="@color/white"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="273dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
