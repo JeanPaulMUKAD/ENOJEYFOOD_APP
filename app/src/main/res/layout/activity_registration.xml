@@ -119,10 +119,10 @@
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:textAlignment="center"
-        android:textColor="#FBFBFB"
+        android:textColor="#FF0000"
         android:textSize="15sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteX="243dp"
         tools:layout_editor_absoluteY="613dp" />
 
 
