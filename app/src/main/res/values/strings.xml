@@ -13,11 +13,11 @@
     <string name="welcome">Welcome</string>
     <string name="welcome_to_you_all">welcome_to_you_all</string>
     <string name="signIn">sign In</string>
-    <string name="full_name">Full Name</string>
+    <string name="full_name">Nom Complet</string>
     <string name="email">Email</string>
-    <string name="Password">Password</string>
+    <string name="Password">Mot De Passe</string>
     <string name="already_register">Already Register ?</string>
-    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="don_t_have_an_account">Pas de Compte?</string>
     <string name="welcome_on_our_app">welcome on Our App</string>
     <string name="enjoyfood">EnjoyFood</string>
     <string name="sign_in">Sign In</string>
