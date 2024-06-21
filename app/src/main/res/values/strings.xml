@@ -23,4 +23,6 @@
     <string name="register">Register</string>
     <string name="todo">TODO</string>
     <string name="sign__in">Sign In</string>
+    <string name="favourite">favourite</string>
+    <string name="daily_mealy">daily_mealy</string>
 </resources>
