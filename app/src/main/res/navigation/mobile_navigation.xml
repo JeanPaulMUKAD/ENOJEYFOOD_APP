@@ -23,8 +23,8 @@
         android:label="@string/favourite"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/myCartFragment"
+        android:id="@+id/nav_my_cart"
         android:name="com.example.enjoyfoof.MyCartFragment"
-        android:label="My Cart"
+        android:label="@string/MyCart"
         tools:layout="@layout/fragment_my_cart" />
 </navigation>
