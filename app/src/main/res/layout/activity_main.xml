@@ -22,6 +22,7 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
         android:background="@color/grey"
+        app:itemTextColor="@color/white"
         app:menu="@menu/activity_main_drawer" >
 
         <Button
