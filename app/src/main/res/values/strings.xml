@@ -36,5 +36,8 @@
     <string name="pizza">Pizza</string>
     <string name="hello">Hello</string>
     <string name="what_do_you_want">What do you want?</string>
-    <string name="product_name">Product Name</string>
+    <string name="product_name">Pizza</string>
+    <string name="_5.0">5.0</string>
+    <string name="_08_00_17_30">08:00 - 17:30</string>
+    <string name="min_20">Min - $20</string>
 </resources>
