@@ -1,12 +1,16 @@
 package com.example.enjoyfoof.adapters;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.enjoyfoof.R;
 import com.example.enjoyfoof.models.HomeVerModel;
 
 import java.util.List;
@@ -22,7 +26,8 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.home_vertical_item, parent,false));
     }
 
     @Override
@@ -32,12 +37,22 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return 0;
+
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView imageView;
+        TextView name,timing,rating,price;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            imageView = itemView.findViewById(R.id.ver_img);
+            name = itemView.findViewById(R.id.name);
+            timing = itemView.findViewById(R.id.textTime);
+            rating = itemView.findViewById(R.id.rating);
+            price = itemView.findViewById(R.id.textMin);
+
         }
     }
 }
