@@ -97,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias=".7"
         android:textStyle="bold"
-        android:onClick="register"
+        android:onClick="mainActivity"
         android:background="@drawable/btn_bg_design"
         app:layout_constraintWidth_percent=".8" />
 

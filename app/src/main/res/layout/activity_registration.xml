@@ -98,6 +98,7 @@
 
 
     <Button
+        android:onClick="mainActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="164dp"
@@ -112,7 +113,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias=".7"
         android:textStyle="bold"
-        android:onClick="register"
         android:background="@drawable/btn_bg_design"
         app:layout_constraintWidth_percent=".8" />
 
