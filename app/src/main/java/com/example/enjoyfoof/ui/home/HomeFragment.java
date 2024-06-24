@@ -12,19 +12,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.enjoyfoof.R;
 import com.example.enjoyfoof.adapters.HomeHorAdapter;
+import com.example.enjoyfoof.adapters.HomeVerAdapter;
 import com.example.enjoyfoof.models.HomeHorModel;
+import com.example.enjoyfoof.models.HomeVerModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    RecyclerView homeHorizontalRec;
+    RecyclerView homeHorizontalRec, homeVerticalRec;
     List<HomeHorModel> homeHorModelList;
     HomeHorAdapter homeHorAdapter;
+
+    ////////////Vertical
+    List<HomeVerModel> homeVerModelList;
+    HomeVerAdapter homeVerAdapter;
+
     public View onCreatView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
+        homeVerticalRec = root.findViewById(R.id.home_ver_rec);
+
+
+        ////////HorizontalRecyclerView
+
         homeHorModelList = new ArrayList<>();
         homeHorModelList.add(new HomeHorModel(R.drawable.pizza,"Pizza"));
         homeHorModelList.add(new HomeHorModel(R.drawable.humberger,"Berger"));
@@ -37,6 +49,15 @@ public class HomeFragment extends Fragment {
         homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
         homeHorizontalRec.setHasFixedSize(true);
         homeHorizontalRec.setNestedScrollingEnabled(false);
+
+        ////////VerticalRecyclerView
+        homeHorModelList = new ArrayList<>();
+        homeVerModelList.add(new HomeVerModel(R.drawable.pizza,"Pizza 1", "10:00 - 20:30","4.9", "$15"));
+        homeVerModelList.add(new HomeVerModel(R.drawable.pizza1,"Pizza 2", "10:00 - 20:30","4.9", "$15"));
+        homeVerModelList.add(new HomeVerModel(R.drawable.pizza2,"Pizza 3 ", "10:00 - 20:30","4.9", "$15"));
+        homeVerModelList.add(new HomeVerModel(R.drawable.pizza3,"Pizza 4", "10:00 - 20:30","4.9", "$15"));
+
+        homeVerAdapter = new HomeVerAdapter(getActivity(), HomeVerModel)
         return  root;
     }
 
