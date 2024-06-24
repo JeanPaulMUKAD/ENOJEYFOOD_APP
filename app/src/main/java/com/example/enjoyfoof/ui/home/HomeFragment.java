@@ -40,7 +40,9 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
-        homeVerticalRec = root.findViewById(R.id.)
+        homeVerticalRec = root.findViewById(R.id.home_ver_rec);
+
+        /////////////////Horizontal RecyclerView
         homeHorcModelList = new ArrayList<>();
         homeHorcModelList.add(new HomeHorcModel(R.drawable.pizza, "Pizza"));
         homeHorcModelList.add(new HomeHorcModel(R.drawable.humberger, "Humberger"));
@@ -53,6 +55,18 @@ public class HomeFragment extends Fragment {
         homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
         homeHorizontalRec.setHasFixedSize(true);
         homeHorizontalRec.setNestedScrollingEnabled(false);
+
+        /////////////////Vertical RecyclerView
+        homeVerModelList = new ArrayList<>();
+        homeVerModelList.add(new HomeVerModel(R.drawable.pizza,"Pizza","10:00 - 21:30","4.9", "Min - $15"));
+        homeVerModelList.add(new HomeVerModel(R.drawable.pizza2,"Pizza","10:00 - 21:30","4.9", "Min - $15"));
+        homeVerModelList.add(new HomeVerModel(R.drawable.pizza3,"Pizza","10:00 - 21:30","4.9", "Min - $15"));
+
+        homeVerAdapter = new HomeVerAdapter(getActivity(),homeVerModelList);
+        homeVerticalRec.setAdapter(homeVerAdapter);
+        homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
+        homeVerticalRec.setHasFixedSize(true);
+        homeVerticalRec.setNestedScrollingEnabled(false);
         return root;
     }
 
