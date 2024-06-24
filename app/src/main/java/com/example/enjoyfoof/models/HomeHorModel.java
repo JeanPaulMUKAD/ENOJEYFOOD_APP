@@ -1,13 +1,14 @@
 package com.example.enjoyfoof.models;
 
-public class HomeHorcModel{
+public class HomeHorModel {
     int image;
     String name;
-
-    public HomeHorcModel(int image, String name){
+    public HomeHorModel(int image, String name) {
         this.image = image;
         this.name = name;
     }
+
+    // Getters et Setters
     public int getImage() {
         return image;
     }
@@ -23,4 +24,5 @@ public class HomeHorcModel{
     public void setName(String name) {
         this.name = name;
     }
+
 }
