@@ -57,7 +57,11 @@ public class HomeFragment extends Fragment {
         homeVerModelList.add(new HomeVerModel(R.drawable.pizza2,"Pizza 3 ", "10:00 - 20:30","4.9", "$15"));
         homeVerModelList.add(new HomeVerModel(R.drawable.pizza3,"Pizza 4", "10:00 - 20:30","4.9", "$15"));
 
-        homeVerAdapter = new HomeVerAdapter(getActivity(), HomeVerModel)
+        homeVerAdapter = new HomeVerAdapter(getActivity(), homeVerModelList);
+        homeVerticalRec.setAdapter(homeVerAdapter);
+        homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
+        homeVerticalRec.setHasFixedSize(true);
+        homeVerticalRec.setNestedScrollingEnabled(false);
         return  root;
     }
 
