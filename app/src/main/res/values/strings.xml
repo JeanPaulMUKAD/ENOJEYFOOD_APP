@@ -34,4 +34,6 @@
     <string name="home">Home</string>
     <string name="daily_meal">Daily Meal</string>
     <string name="pizza">Pizza</string>
+    <string name="hello">Hello</string>
+    <string name="what_do_you_want">What do you want?</string>
 </resources>
