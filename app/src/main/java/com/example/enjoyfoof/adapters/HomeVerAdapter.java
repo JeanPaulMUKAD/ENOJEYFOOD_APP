@@ -19,6 +19,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
 
     Context context;
     List<HomeVerModel> list;
+
     public HomeVerAdapter(Context context, List<HomeVerModel> list){
         this.context = context;
         this.list = list;
