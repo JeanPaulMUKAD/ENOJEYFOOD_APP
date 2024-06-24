@@ -8,42 +8,54 @@
     android:layout_height="match_parent"
     tools:context=".activities.DetailedDailyMealActivity">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/AppBar"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:fitsSystemWindows="true">
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Daily Meals">
 
-            <com.google.android.material.appbar.CollapsingToolbarLayout
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fitsSystemWindows="true"
-                app:contentScrim="?attr/colorPrimary"
-                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
-                app:title="Daily Meals">
+                android:layout_height="240dp"
+                android:src="@drawable/welcome"
+                android:scaleType="centerCrop" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="240dp"
-                    android:src="@drawable/welcome"
-                    android:scaleType="centerCrop"/>
-                
-               <androidx.appcompat.widget.Toolbar
-                   android:layout_width="match_parent"
-                   android:layout_height="?attr/actionBarSize"
-                   app:titleTextColor="@color/white"/>
-            </com.google.android.material.appbar.CollapsingToolbarLayout>
-        </com.google.android.material.appbar.AppBarLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/white" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="20dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-            
+
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailed_rec"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        
+            android:layout_height="wrap_content" />
+
     </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/baseline_dining_24"
+        android:baselineAlignBottom="false"
+        app:fabSize="normal"
+        app:layout_anchorGravity="end|bottom"
+        app:tint="@null"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
