@@ -14,18 +14,24 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.enjoyfoof.R;
 import com.example.enjoyfoof.adapters.HomeHorcAdapter;
+import com.example.enjoyfoof.adapters.HomeVerAdapter;
 import com.example.enjoyfoof.databinding.FragmentHomeBinding;
 import com.example.enjoyfoof.models.HomeHorcModel;
+import com.example.enjoyfoof.models.HomeVerModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    RecyclerView homeHorizontalRec;
+    RecyclerView homeHorizontalRec,homeVerticalRec;
     List<HomeHorcModel> homeHorcModelList;
     HomeHorcAdapter homeHorcAdapter;
     private FragmentHomeBinding binding;
+
+    ////////////////////Vertical
+    List<HomeVerModel> homeVerModelList;
+    HomeVerAdapter homeVerAdapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -34,6 +40,7 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
+        homeVerticalRec = root.findViewById(R.id.)
         homeHorcModelList = new ArrayList<>();
         homeHorcModelList.add(new HomeHorcModel(R.drawable.pizza, "Pizza"));
         homeHorcModelList.add(new HomeHorcModel(R.drawable.humberger, "Humberger"));
