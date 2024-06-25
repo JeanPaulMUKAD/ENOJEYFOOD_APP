@@ -41,4 +41,7 @@
     <string name="_08_00_17_30">08:00 - 17:30</string>
     <string name="min_20">Min - $20</string>
     <string name="search_your_food">Search Your Food!</string>
+    <string name="dinner">Dinner</string>
+    <string name="descriptiom">Descriptiom</string>
+    <string name="discount">Discount</string>
 </resources>
