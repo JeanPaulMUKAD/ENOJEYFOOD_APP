@@ -8,7 +8,7 @@ public class DailyMealModel {
     String description;
 
     // Constructeur
-    public DailyMealModel(int image, String name, String discount, String description) {
+    public DailyMealModel(int image, String name, String discount, String type, String description) {
         this.image = image;
         this.name = name;
         this.discount = discount;
