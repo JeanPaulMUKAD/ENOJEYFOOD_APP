@@ -49,8 +49,8 @@ public class DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.view
 
             imageView = itemView.findViewById(R.id.imageView);
             name = itemView.findViewById(R.id.textMail01);
+            discount= itemView.findViewById(R.id.discountMeal);
             description = itemView.findViewById(R.id.descriptionMeal);
-            discountc= itemView.findViewById(R.id.discountMeal);
         }
     }
 }
