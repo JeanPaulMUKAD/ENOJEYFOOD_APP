@@ -48,6 +48,8 @@
     <string name="_10_weekend_delicious_ndinner_recipes">10 weekend delicious \nDinner Recipes</string>
     <string name="view_more">View More</string>
     <string name="your_favourite_food_and_testy_food_is_here">Your favourite Food and Testy Food is here!</string>
-    <string name="name">Name</string>
+    <string name="name">Coffee</string>
     <string name="description">Description</string>
+    <string name="_120_00">120.00</string>
+    <string name="add_to_cart">Add To Cart</string>
 </resources>
