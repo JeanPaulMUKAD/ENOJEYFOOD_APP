@@ -23,7 +23,7 @@
     <string name="register">Register</string>
     <string name="todo">TODO</string>
     <string name="sign__in">Sign In</string>
-    <string name="favourite">favourite</string>
+    <string name="favourite">Favourite</string>
     <string name="daily_mealy">daily_mealy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -44,4 +44,6 @@
     <string name="dinner">Dinner</string>
     <string name="descriptiom">Descriptiom</string>
     <string name="discount">Discount</string>
+
+    <string name="_10_weekend_delicious_ndinner_recipes">10 weekend delicious \nDinner Recipes</string>
 </resources>
