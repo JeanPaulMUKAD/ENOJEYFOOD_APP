@@ -1,4 +1,4 @@
-package com.example.enjoyfoof.ui.slideshow;
+package com.example.enjoyfoof.ui.dailyMeal;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,17 +8,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.enjoyfoof.R;
 import com.example.enjoyfoof.databinding.FragmentSlideshowBinding;
 
-public class FavouriteFragment extends Fragment {
-
+public class DailyMealFragment extends Fragment {
     private FragmentSlideshowBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        View root = inflater.inflate(R.layout.daily_meal_fragment, container, false);
 
         return root;
     }
@@ -28,4 +27,5 @@ public class FavouriteFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }
